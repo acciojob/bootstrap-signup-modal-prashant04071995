@@ -16,13 +16,15 @@
 
   <!-- Signup Modal -->
   <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="signupModalLabel">Create Account</h5>
-          <button type="button" class="close" data-bs-dismiss="modal-visible" aria-label="Close">Close</button>
-        </div>
-        <div class="modal-body">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Create Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Start of Form -->
+        <form>
           <!-- Email Input -->
           <div class="mb-3">
             <label for="Email address" class="form-label">Email address</label>
@@ -35,21 +37,22 @@
             <label for="passwordInput" class="form-label">Password</label>
             <input type="password" class="form-control" id="passwordInput" placeholder="Password" required>
           </div>
-          </div>
 
           <!-- Confirm Password Input -->
           <div class="mb-3">
-            <label for="Confirm Passwor" class="form-label">Confirm Password</label>
+            <label for="Confirm Password" class="form-label">Confirm Password</label>
             <input type="password" class="form-control" id="confirmPasswordInput" placeholder="Confirm Password" required>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
-          <button type="button" class="btn btn-primary">Submit</button>
-        </div>
+        </form>
+        <!-- End of Form -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </div>
+</div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
